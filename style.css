@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    /* Primary */
+    
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.conteiner {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card h1 {
+    font-family:'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+}
+
+.bnt {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.bnt__1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.bnt__2 {
+    color:hsl(184, 100%, 22%);
+}
+
+.bnt__3 {
+    color: hsl(179, 100%, 13%);;
+}
+
+.attribution {
+   
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: rgb(0, 17, 255);
+}
+
+@media  (max-width: 600px) {
+    .conteiner {
+        margin: 10px 0px 10px 0px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        border-radius: 0px !important;
+        height: 400px;
+    }
+
+    .card:nth-child(1) {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .card:nth-child(3) {
+        border-radius: 0px 0px 10px 10px !important;
+    }
+
+    .attribution {
+        padding: 15px;
+        font-size: 14px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .attribution a {
+        text-decoration: none;
+        color: rgb(0, 17, 255);
+    }
+}
